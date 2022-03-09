@@ -27,7 +27,17 @@ func romanTodecimal(rom string) (int, error) {
 	if len(rom) < 2 {
 		return m[rom], nil
 	}
-	/* my good stuff */
+	/* my good stuff 
+	{"mcmlxxxviii", 1988},
+	1000 100 1000 50 10 10 10 5 1 1 1
+
+	{"mcmxcix", 1999},
+	1000 100 1000 10 100 1 10
+
+	{"viii", 8},
+	5 1 1 1
+	*/
+
 	last := 0
 	cur := 0
 
